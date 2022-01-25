@@ -1,0 +1,26 @@
+@media screen and (max-width: 576px) and (orientation: portrait) {
+    #home {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    #home .home__title {
+        width: 100vmin;
+    }
+
+    #home .home__image {
+        width: 100vmin;
+    }
+
+    #home .home__image .art {
+        align-items: flex-end;
+    }
+
+    #home .home__image .art__config {
+        width: 100vmin;
+    }
+
+    #home .home__image .art__giovane {
+        width: 65vmin;
+    }
+}

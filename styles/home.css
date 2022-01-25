@@ -1,0 +1,142 @@
+#home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#home .home__title {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .home__title__group {
+    padding-left: 20px;
+}
+
+#home .home__title__group .hi {
+    font-size: 2.1rem;
+    color: var(--green-color);
+    margin-bottom: 8px;
+}
+
+#home .home__title__group .name {
+    font-weight: 700;
+    font-size: 4vw;
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    background-size: 200% 200%;
+    animation: name_animation 5s ease infinite alternate;
+}
+
+@keyframes name_animation {
+    0% {
+        background-position: 10% 0%;
+    }
+    50% {
+        background-position: 60% 25%;
+    }
+    100% {
+        background-position: 5% 50%;
+    }
+}
+
+#home .home__title__group .work {
+    font-size: 1.4rem;
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#home .home__title__links {
+    margin-top: 40px;
+}
+
+#home .home__title__links .link {
+    text-decoration:none; 
+}
+
+#home .home__title__links .image {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: box-shadow 100ms;
+}
+
+#home .home__title__links .image:hover {
+    transition: box-shadow 200ms;
+    box-shadow: 0px 0px 10px 1px var(--green-color);
+}
+
+#home .home__image { 
+    flex: 10;
+    display: flex;
+    justify-content: center;
+}
+
+#home .home__image .art {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .home__image .art__config {
+    position: absolute;
+    width: 55vw;
+}
+
+#home .home__image .art__giovane {
+    position: absolute;
+    width: 35vw;
+}
+
+#home .home__scroll {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .home__scroll span {
+    top: 0;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid var(--green-color);
+    border-radius: 50px;
+    position: relative;
+}
+
+#home .home__scroll span::before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    width: 7px;
+    height: 7px;
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: var(--purple-color);
+    animation: spin-scroll 2s infinite;
+}
+
+@keyframes spin-scroll {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}

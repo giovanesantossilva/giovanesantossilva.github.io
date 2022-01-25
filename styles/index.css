@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root {
+    --dark-color: #1B1B20;
+    --dark-color-0: #2D2D35;
+    --green-color: #28F5BE;
+    --purple-color: #4C388B;
+    --text-color: #737380;
+    --text-gradient: linear-gradient(to right, var(--green-color) 2%, var(--purple-color) 90%);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--dark-color);
+}

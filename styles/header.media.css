@@ -1,0 +1,14 @@
+@media screen and (max-width: 576px) and (orientation: portrait) {
+    #header .header__container {
+        padding: 0;
+    }
+
+    #header .header__name {
+        justify-content: center;
+    }
+
+    #header .header__navigation {
+        display: none;
+    }
+    
+}
